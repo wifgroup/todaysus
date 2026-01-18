@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Business – Today’s US</title>
+
+    <meta name="description"
+        content="Business and economic reporting from Today’s US, covering markets, companies, labor, and policy." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://todaysus.com/business/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Business – Today’s US" />
+    <meta property="og:description" content="Markets, companies, labor, and economic policy explained." />
+    <meta property="og:site_name" content="Today’s US" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/category.css" />
+</head>
+
+<body>
+    <!-- CONTEXT BAR -->
+    <div class="context-bar">
+        <div class="container context-inner">
+            <div class="context-left">
+                <time id="currentDate" datetime=""></time>
+
+                <!-- <time datetime="2026-01-17">Friday, January 17, 2026</time> -->
+                <span class="sep">•</span>
+                <span>United States</span>
+                <span class="sep">•</span>
+                <span class="status">Developing coverage</span>
+            </div>
+
+            <div class="context-right">
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    ☾
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <a class="brand-link" href="https://todaysus.com" aria-label="Today’s US home">
+                    <span class="brand-mark" aria-hidden="true"></span>
+                    <span class="brand-name">Today’s US</span>
+                </a>
+                <p class="brand-tag">U.S. News • Politics • Business • Tech</p>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="/news">News</a>
+                <a href="/politics">Politics</a>
+                <a href="/business">Business</a>
+                <a href="/technology">Technology</a>
+                <a href="/world">World</a>
+                <a href="/opinion">Opinion</a>
+                <a class="nav-cta" href="#subscribe">Get Updates</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileNav">
+                <span class="menu-lines" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobileNav" hidden>
+            <div class="container mobile-nav-inner">
+                <a href="/news">News</a>
+                <a href="/politics">Politics</a>
+                <a href="/business">Business</a>
+                <a href="/technology">Technology</a>
+                <a href="/world">World</a>
+                <a href="/opinion">Opinion</a>
+                <a href="#subscribe">Get Updates</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="category-main container">
+
+        <!-- CATEGORY HEADER -->
+        <header class="category-header">
+            <span class="category-kicker">Coverage</span>
+            <h1>Business</h1>
+            <p class="category-desc">
+                Markets, companies, labor, and economic policy — with context and verification.
+            </p>
+        </header>
+
+        <!-- MAIN GRID -->
+        <div class="category-grid">
+
+            <!-- MAIN CONTENT -->
+            <section class="category-content">
+
+                <!-- LEAD STORY -->
+                <article class="category-lead">
+                    <span class="label">Featured analysis</span>
+                    <h2>
+                        <a href="/business/how-policy-decisions-shape-the-us-economy.html">
+                            How policy decisions are shaping the U.S. economy in 2026
+                        </a>
+                    </h2>
+                    <p>
+                        Fiscal policy, regulation, and global pressures are converging to reshape
+                        the economic outlook for the United States.
+                    </p>
+                    <div class="meta">
+                        <span>Analysis</span>
+                        <span class="sep">•</span>
+                        <time datetime="2026-01-17">Jan 17, 2026</time>
+                    </div>
+                </article>
+
+                <!-- STORY STREAM -->
+                <div class="story-stream">
+
+                    <article class="stream-item">
+                        <h3><a href="#">Why market volatility isn’t always a warning sign</a></h3>
+                        <p>Understanding short-term movement versus structural risk.</p>
+                        <span class="stream-meta">Context • Jan 16, 2026</span>
+                    </article>
+
+                    <article class="stream-item">
+                        <h3><a href="#">How regulatory uncertainty affects business confidence</a></h3>
+                        <p>Why companies delay decisions during policy transitions.</p>
+                        <span class="stream-meta">Explainer • Jan 16, 2026</span>
+                    </article>
+
+                    <article class="stream-item">
+                        <h3><a href="#">What government spending debates mean for taxpayers</a></h3>
+                        <p>The real-world impact of fiscal negotiations.</p>
+                        <span class="stream-meta">Analysis • Jan 15, 2026</span>
+                    </article>
+
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="pagination">
+                    <button class="btn btn-ghost">Load more</button>
+                </div>
+
+            </section>
+
+            <!-- SIDEBAR -->
+            <aside class="category-sidebar">
+
+                <div class="sidebar-box">
+                    <h4>Most read</h4>
+                    <ol class="most-read">
+                        <li><a href="#">How inflation data shapes policy decisions</a></li>
+                        <li><a href="#">Why interest rates matter more than headlines</a></li>
+                        <li><a href="#">Understanding recession indicators</a></li>
+                    </ol>
+                </div>
+
+                <div class="sidebar-box">
+                    <h4>Topics</h4>
+                    <ul class="topic-list">
+                        <li><a href="#">U.S. economy</a></li>
+                        <li><a href="#">Markets</a></li>
+                        <li><a href="#">Labor</a></li>
+                        <li><a href="#">Fiscal policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box sidebar-subscribe">
+                    <h4>Stay informed</h4>
+                    <p>Get new reporting when it publishes.</p>
+                    <a href="#subscribe" class="btn btn-primary btn-full">Subscribe</a>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- FOOTER (reuse existing) -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">Today’s US</div>
+                <p>Independent American newsroom focused on clarity, context, and verified reporting.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Company</h3>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/editorial-policy">Editorial policy</a>
+                <a href="/corrections">Corrections</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <a href="/privacy-policy">Privacy policy</a>
+                <a href="/terms-of-use">Terms of use</a>
+                <a href="/ethics">Ethics</a>
+            </div>
+
+            <div class="footer-meta">
+                <p class="disclaimer">Not affiliated with any other media outlet.</p>
+                <small>© <span id="year"></span> Today’s US</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Today’s US – Independent U.S. News & Analysis</title>
+
+    <meta name="description"
+        content="Today’s US is an independent American newsroom delivering clear reporting and analysis on U.S. politics, business, technology, and society." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://todaysus.com/" />
+
+    <!-- Basic Open Graph -->
+    <meta property="og:site_name" content="Today’s US" />
+    <meta property="og:title" content="Today’s US – Independent U.S. News & Analysis" />
+    <meta property="og:description"
+        content="Clear reporting and analysis on U.S. politics, business, technology, and society." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todaysus.com/" />
+
+    <!-- Organization + Website schema (publisher-friendly baseline) -->
+    <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"NewsMediaOrganization",
+    "name":"Today’s US",
+    "url":"https://todaysus.com",
+    "description":"Independent American newsroom delivering reporting and analysis on U.S. politics, business, technology, and society.",
+    "foundingDate":"2026",
+    "address":{"@type":"PostalAddress","addressCountry":"US"},
+    "publishingPrinciples":"https://todaysus.com/editorial-policy",
+    "logo":{"@type":"ImageObject","url":"https://todaysus.com/logo.png"}
+  }
+  </script>
+    <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Today’s US",
+    "url":"https://todaysus.com"
+  }
+  </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- CONTEXT BAR -->
+    <div class="context-bar">
+        <div class="container context-inner">
+            <div class="context-left">
+                <time id="currentDate" datetime=""></time>
+
+                <!-- <time datetime="2026-01-17">Friday, January 17, 2026</time> -->
+                <span class="sep">•</span>
+                <span>United States</span>
+                <span class="sep">•</span>
+                <span class="status">Developing coverage</span>
+            </div>
+
+            <div class="context-right">
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    ☾
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <a class="brand-link" href="https://todaysus.com" aria-label="Today’s US home">
+                    <span class="brand-mark" aria-hidden="true"></span>
+                    <span class="brand-name">Today’s US</span>
+                </a>
+                <p class="brand-tag">U.S. News • Politics • Business • Tech</p>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="/news">News</a>
+                <a href="/politics">Politics</a>
+                <a href="/business">Business</a>
+                <a href="/technology">Technology</a>
+                <a href="/world">World</a>
+                <a href="/opinion">Opinion</a>
+                <a class="nav-cta" href="#subscribe">Get Updates</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileNav">
+                <span class="menu-lines" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobileNav" hidden>
+            <div class="container mobile-nav-inner">
+                <a href="/news">News</a>
+                <a href="/politics">Politics</a>
+                <a href="/business">Business</a>
+                <a href="/technology">Technology</a>
+                <a href="/world">World</a>
+                <a href="/opinion">Opinion</a>
+                <a href="#subscribe">Get Updates</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main id="main" class="main" role="main">
+        <!-- Hero / Lead -->
+        <!-- <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-left reveal">
+                    <p class="kicker">Independent U.S. Journalism</p>
+
+                    <h1>Clear reporting on what’s shaping America today.</h1>
+                    <p class="lead">
+                        Today’s US is an independent newsroom focused on accuracy, verification, and context across U.S.
+                        politics,
+                        business, technology, and society.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#subscribe">Subscribe for launch updates</a>
+                        <a class="btn btn-ghost" href="/editorial-policy">Read editorial standards</a>
+                    </div>
+
+                    <p class="fineprint">
+                        <span class="pill">Coming soon</span>
+                        First coverage publishing shortly · <time datetime="2026-01">2026</time>
+                    </p>
+                </div>
+
+                <aside class="hero-right reveal" aria-label="Coverage highlights">
+                    <div class="panel">
+                        <div class="panel-head">
+                            <span class="panel-title">Coverage desks</span>
+                            <span class="panel-sub">What we’re building</span>
+                        </div>
+
+                        <ul class="desk-list">
+                            <li>
+                                <span class="desk-label">Politics</span>
+                                <span class="desk-desc">Policy, elections, institutions, accountability.</span>
+                            </li>
+                            <li>
+                                <span class="desk-label">Business</span>
+                                <span class="desk-desc">Markets, jobs, corporate decisions, economy.</span>
+                            </li>
+                            <li>
+                                <span class="desk-label">Technology</span>
+                                <span class="desk-desc">AI, regulation, cybersecurity, innovation.</span>
+                            </li>
+                            <li>
+                                <span class="desk-label">Society</span>
+                                <span class="desk-desc">Education, health, culture, public life.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section> -->
+        <!-- Hero / Lead -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <!-- LEFT -->
+                <div class="hero-left reveal">
+                    <p class="kicker">Independent U.S. Journalism</p>
+
+                    <h1>Clear reporting on what’s shaping America today.</h1>
+
+                    <p class="lead">
+                        Today’s US is an independent newsroom focused on accuracy,
+                        verification, and context across U.S. politics, business,
+                        technology, and society.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#subscribe">Subscribe for updates</a>
+                        <a class="btn btn-ghost" href="/editorial-policy">Editorial standards</a>
+                    </div>
+
+                    <p class="fineprint">
+                        <span class="pill">Launching soon</span>
+                        First stories publishing shortly · <time datetime="2026">2026</time>
+                    </p>
+                </div>
+
+                <!-- RIGHT -->
+                <aside class="hero-right reveal">
+
+                    <!-- TODAY'S BRIEFING -->
+                    <div class="briefing">
+                        <div class="briefing-head">
+                            <h2>Today’s briefing</h2>
+                            <span class="briefing-meta">Updated today</span>
+                        </div>
+
+                        <ul class="briefing-list">
+                            <li>
+                                <a href="#">
+                                    <span class="briefing-label">Politics</span>
+                                    How early policy signals are shaping the 2026 agenda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="briefing-label">Business</span>
+                                    Why market volatility is no longer the main concern
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="briefing-label">Technology</span>
+                                    How AI regulation is moving faster than expected
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- COVERAGE DESKS (existing panel, unchanged) -->
+                    <div class="panel">
+                        <div class="panel-head">
+                            <span class="panel-title">Coverage desks</span>
+                            <span class="panel-sub">What we’re building</span>
+                        </div>
+
+                        <ul class="desk-list">
+                            <li>
+                                <span class="desk-label">Politics</span>
+                                <span class="desk-desc">Policy, elections, accountability.</span>
+                            </li>
+                            <li>
+                                <span class="desk-label">Business</span>
+                                <span class="desk-desc">Markets, jobs, economy.</span>
+                            </li>
+                            <li>
+                                <span class="desk-label">Technology</span>
+                                <span class="desk-desc">AI, regulation, innovation.</span>
+                            </li>
+                            <li>
+                                <span class="desk-label">Society</span>
+                                <span class="desk-desc">Public life, education, health.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </aside>
+            </div>
+        </section>
+
+        <!-- FEATURED ARTICLE -->
+        <!-- <section class="section section-featured-article">
+            <div class="container featured-article-grid">
+
+         
+                <article class="featured-article reveal">
+                    <span class="article-label">Featured Analysis</span>
+
+                    <h2 class="article-headline">
+                        How policy decisions in Washington are shaping the U.S. economy in 2026
+                    </h2>
+
+                    <p class="article-deck">
+                        An in-depth look at how fiscal policy, regulation, and global pressures are influencing
+                        economic direction in the United States.
+                    </p>
+
+                    <div class="article-meta">
+                        <span class="article-category">Business & Economy</span>
+                        <span class="sep">•</span>
+                        <span class="article-author">By Today’s US Editorial Desk</span>
+                        <span class="sep">•</span>
+                        <time datetime="2026-01-17">January 17, 2026</time>
+                    </div>
+
+                    <a href="#" class="article-link">
+                        Read the full analysis →
+                    </a>
+                </article>
+
+                <div class="featured-visual reveal" aria-hidden="true">
+                    <div class="visual-placeholder">
+                        <span>Featured story image</span>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+
+        <!-- FEATURED ARTICLES -->
+        <section class="section section-featured">
+            <div class="container featured-grid">
+
+                <!-- PRIMARY FEATURE -->
+                <article class="feature-main reveal">
+                    <span class="feature-label">Featured Analysis</span>
+
+                    <h2>
+                        <a href="/business/how-policy-decisions-shape-the-us-economy.html">
+                            How policy decisions in Washington are shaping the U.S. economy in 2026
+                        </a>
+                    </h2>
+
+                    <p class="feature-deck">
+                        Fiscal policy, regulation, and global pressures are converging to
+                        reshape the economic outlook for the United States.
+                    </p>
+
+                    <div class="feature-meta">
+                        <span class="category">Business</span>
+                        <span class="sep">•</span>
+                        <span>By Today’s US Editorial Desk</span>
+                        <span class="sep">•</span>
+                        <time datetime="2026-01-17">Jan 17, 2026</time>
+                    </div>
+                </article>
+
+                <!-- SECONDARY FEATURES -->
+                <div class="feature-secondary">
+
+                    <article class="feature-side reveal">
+                        <span class="feature-label subtle">Politics</span>
+                        <h3>
+                            <a href="#">
+                                How legislative priorities are set at the start of a session
+                            </a>
+                        </h3>
+                        <p>
+                            Inside the process that determines which bills move first — and why.
+                        </p>
+                        <time datetime="2026-01-16">Jan 16, 2026</time>
+                    </article>
+
+                    <article class="feature-side reveal">
+                        <span class="feature-label subtle">Technology</span>
+                        <h3>
+                            <a href="#">
+                                Why AI regulation is accelerating faster than expected
+                            </a>
+                        </h3>
+                        <p>
+                            Governments are responding to real-world impacts sooner than predicted.
+                        </p>
+                        <time datetime="2026-01-16">Jan 16, 2026</time>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- LATEST BY CATEGORY -->
+        <section class="section section-latest-category">
+            <div class="container">
+
+                <div class="section-head">
+                    <h2>Latest coverage</h2>
+                    <p class="section-sub">
+                        The most recent reporting and analysis across key coverage areas.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <!-- POLITICS -->
+                    <div class="category-block">
+                        <div class="category-head">
+                            <h3>Politics</h3>
+                            <a href="/politics" class="category-link">View all →</a>
+                        </div>
+
+                        <article class="category-story">
+                            <h4>
+                                <a href="#">
+                                    How early policy negotiations are shaping the legislative agenda
+                                </a>
+                            </h4>
+                            <p>What happens before bills ever reach the floor.</p>
+                            <time datetime="2026-01-17">Jan 17, 2026</time>
+                        </article>
+
+                        <article class="category-story">
+                            <h4>
+                                <a href="#">
+                                    Why party strategy matters more than public messaging
+                                </a>
+                            </h4>
+                            <p>The behind-the-scenes decisions driving outcomes.</p>
+                            <time datetime="2026-01-16">Jan 16, 2026</time>
+                        </article>
+                    </div>
+
+                    <!-- BUSINESS -->
+                    <div class="category-block">
+                        <div class="category-head">
+                            <h3>Business</h3>
+                            <a href="/business" class="category-link">View all →</a>
+                        </div>
+
+                        <article class="category-story">
+                            <h4>
+                                <a href="#">
+                                    What market volatility is actually telling investors
+                                </a>
+                            </h4>
+                            <p>Separating short-term movement from structural signals.</p>
+                            <time datetime="2026-01-17">Jan 17, 2026</time>
+                        </article>
+
+                        <article class="category-story">
+                            <h4>
+                                <a href="#">
+                                    How regulatory uncertainty affects corporate decisions
+                                </a>
+                            </h4>
+                            <p>Why companies delay investments during policy shifts.</p>
+                            <time datetime="2026-01-16">Jan 16, 2026</time>
+                        </article>
+                    </div>
+
+                    <!-- TECHNOLOGY -->
+                    <div class="category-block">
+                        <div class="category-head">
+                            <h3>Technology</h3>
+                            <a href="/technology" class="category-link">View all →</a>
+                        </div>
+
+                        <article class="category-story">
+                            <h4>
+                                <a href="#">
+                                    Why AI regulation is accelerating faster than expected
+                                </a>
+                            </h4>
+                            <p>Governments respond to real-world impact.</p>
+                            <time datetime="2026-01-17">Jan 17, 2026</time>
+                        </article>
+
+                        <article class="category-story">
+                            <h4>
+                                <a href="#">
+                                    How cybersecurity policy is moving into the mainstream
+                                </a>
+                            </h4>
+                            <p>What new rules could mean for businesses.</p>
+                            <time datetime="2026-01-16">Jan 16, 2026</time>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MOST READ -->
+        <section class="section section-most-read">
+            <div class="container">
+
+                <div class="most-read-head">
+                    <h2>Most read</h2>
+                    <p class="most-read-sub">
+                        Stories readers are engaging with today.
+                    </p>
+                </div>
+
+                <div class="most-read-grid">
+
+                    <!-- CURATED LIST -->
+                    <ol class="most-read-list refined">
+
+                        <li>
+                            <span class="mr-rank">1</span>
+                            <div class="mr-content">
+                                <span class="mr-label">Politics</span>
+                                <a href="#">
+                                    How early negotiations shape what Congress actually votes on
+                                </a>
+                                <time datetime="2026-01-17">Jan 17, 2026</time>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="mr-rank">2</span>
+                            <div class="mr-content">
+                                <span class="mr-label">Business</span>
+                                <a href="#">
+                                    Why volatility isn’t always a warning — and what matters instead
+                                </a>
+                                <time datetime="2026-01-17">Jan 17, 2026</time>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="mr-rank">3</span>
+                            <div class="mr-content">
+                                <span class="mr-label">Technology</span>
+                                <a href="#">
+                                    The real reasons AI regulation is accelerating
+                                </a>
+                                <time datetime="2026-01-16">Jan 16, 2026</time>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="mr-rank">4</span>
+                            <div class="mr-content">
+                                <span class="mr-label">World</span>
+                                <a href="#">
+                                    Global supply shifts quietly affecting U.S. prices
+                                </a>
+                                <time datetime="2026-01-16">Jan 16, 2026</time>
+                            </div>
+                        </li>
+
+                    </ol>
+
+                    <!-- EDITORIAL SPOTLIGHT -->
+                    <aside class="most-read-spotlight refined">
+                        <span class="spotlight-kicker">Editor’s pick</span>
+                        <h3>
+                            <a href="/business/how-policy-decisions-shape-the-us-economy.html">
+                                How policy decisions are shaping the U.S. economy in 2026
+                            </a>
+                        </h3>
+                        <p>
+                            A deeper analysis of fiscal signals, regulatory shifts,
+                            and how markets react before decisions are finalized.
+                        </p>
+                        <a class="spotlight-link" href="/business/how-policy-decisions-shape-the-us-economy.html">
+                            Read the full analysis →
+                        </a>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EDITORIAL GRID -->
+        <section class="section section-editorial">
+            <div class="container editorial-grid">
+
+                <!-- MAIN COLUMN -->
+                <div class="editorial-main">
+
+                    <!-- THE BIG STORY -->
+                    <article class="story feature reveal">
+                        <span class="label">The Big Story</span>
+                        <h2>How policy signals—not just decisions—are shaping 2026</h2>
+                        <p>
+                            An editorial overview explaining why early signals from Washington
+                            are already influencing markets, institutions, and public expectations.
+                        </p>
+                        <span class="meta">Analysis · Updated regularly</span>
+                    </article>
+
+                    <!-- EDITOR’S FOCUS -->
+                    <div class="block">
+                        <h3 class="block-title">Editor’s focus</h3>
+                        <ul class="simple-list">
+                            <li>Why context matters more than speed in political coverage</li>
+                            <li>How we distinguish analysis from opinion</li>
+                            <li>What readers should watch as policies take shape</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <!-- SIDEBAR -->
+                <aside class="editorial-sidebar reveal">
+
+                    <div class="sidebar-box">
+                        <h4>What We’re Watching</h4>
+                        <ul>
+                            <li>Federal policy developments</li>
+                            <li>Economic indicators</li>
+                            <li>Technology regulation</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h4>Explainers</h4>
+                        <ul>
+                            <li>How U.S. elections work</li>
+                            <li>What inflation data actually shows</li>
+                            <li>How AI policy is formed</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-box subtle">
+                        <p>
+                            We clearly label News, Analysis, and Opinion.
+                            <a href="/editorial-policy">Read our editorial standards →</a>
+                        </p>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- Coverage overview -->
+        <section class="section section-coverage">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Coverage Areas</h2>
+                    <p class="section-sub">A newsroom structure designed for clarity, not noise.</p>
+                </div>
+
+                <div class="cards">
+                    <a class="card reveal" href="/news">
+                        <h3>U.S. News</h3>
+                        <p>National reporting and verified updates across the country.</p>
+                        <span class="card-link">Explore →</span>
+                    </a>
+
+                    <a class="card reveal" href="/politics">
+                        <h3>Politics</h3>
+                        <p>Government, elections, policy, and accountability reporting.</p>
+                        <span class="card-link">Explore →</span>
+                    </a>
+
+                    <a class="card reveal" href="/business">
+                        <h3>Business</h3>
+                        <p>Markets, companies, labor, and economic forces explained.</p>
+                        <span class="card-link">Explore →</span>
+                    </a>
+
+                    <a class="card reveal" href="/technology">
+                        <h3>Technology</h3>
+                        <p>AI, cybersecurity, and digital policy shaping daily life.</p>
+                        <span class="card-link">Explore →</span>
+                    </a>
+
+                    <a class="card reveal" href="/world">
+                        <h3>World</h3>
+                        <p>Global developments with direct impact on the U.S.</p>
+                        <span class="card-link">Explore →</span>
+                    </a>
+
+                    <a class="card reveal" href="/opinion">
+                        <h3>Opinion</h3>
+                        <p>Arguments grounded in evidence, with transparent perspectives.</p>
+                        <span class="card-link">Explore →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Standards -->
+        <section class="section section-standards">
+            <div class="container standards-grid">
+                <div class="standards-left reveal">
+                    <h2>Built for trust</h2>
+                    <p>
+                        Today’s US is committed to accuracy, transparency, and editorial independence. We separate news
+                        from opinion,
+                        correct errors openly, and disclose conflicts of interest.
+                    </p>
+                    <div class="ticks">
+                        <div class="tick">Verification first</div>
+                        <div class="tick">Transparent corrections</div>
+                        <div class="tick">Clear labeling (News / Analysis / Opinion)</div>
+                    </div>
+                    <a class="btn btn-ghost" href="/editorial-policy">See our editorial policy</a>
+                </div>
+
+                <div class="standards-right reveal">
+                    <div class="quote">
+                        <p>“A newsroom should help readers understand what happened — and why it matters.”</p>
+                        <span class="quote-by">Today’s US — Editorial Mission</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe -->
+        <section class="section section-subscribe" id="subscribe">
+            <div class="container subscribe-wrap reveal">
+                <div class="subscribe-copy">
+                    <h2>Get launch updates</h2>
+                    <p>Receive a short email when our first stories publish and new sections go live.</p>
+                    <p class="mini">No spam. Unsubscribe anytime.</p>
+                </div>
+
+                <form class="subscribe-form" id="subscribeForm">
+                    <label class="sr-only" for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="Email address" required />
+                    <button type="submit" class="btn btn-primary">Notify me</button>
+                    <p class="form-note" id="formNote" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">Today’s US</div>
+                <p>Independent American newsroom focused on clarity, context, and verified reporting.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Company</h3>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/editorial-policy">Editorial policy</a>
+                <a href="/corrections">Corrections</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <a href="/privacy-policy">Privacy policy</a>
+                <a href="/terms-of-use">Terms of use</a>
+                <a href="/ethics">Ethics</a>
+            </div>
+
+            <div class="footer-meta">
+                <p class="disclaimer">Not affiliated with any other media outlet.</p>
+                <small>© <span id="year"></span> Today’s US</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
